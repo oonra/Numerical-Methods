@@ -30,7 +30,7 @@ def BisectionMethod(func, a, b, mxi, tol):
     #Applying the method:
     while (abs(f(m)) > tolerance and iters < max_iters):
         #Printing the table in each iteration:
-        table= [["-   a   -", "-  f(a)  -", "-   b   -", "-  f(b)  -", "  ", "-   m   -", "-  f(m)  -"], 
+        table= [["-   a   -", "-  f(a)  -", "-   b   -", "-  f(b)  -", " ", "-   m   -", "-  f(m)  -"], 
                 [round(a,5), round(f(a),5), round(b,5), round(f(b),5), " ", round(m,5), round(f(m),5)]]
         print(tabulate(table, tablefmt="grid"))
         print()
@@ -54,7 +54,7 @@ def BisectionMethod(func, a, b, mxi, tol):
 
     if conditions == True:
         #Final table at the end of the method
-        table= [["-   a   -", "-  f(a)  -", "-   b   -", "-  f(b)  -", "  ", "-   m   -", "-  f(m)  -"], 
+        table= [["-   a   -", "-  f(a)  -", "-   b   -", "-  f(b)  -", " ", "-   m   -", "-  f(m)  -"], 
                 [round(a,5), round(f(a),5), round(b,5), round(f(b),5), " ", round(m,5), round(f(m),5)]]
         print(tabulate(table, tablefmt="grid"))
         print()

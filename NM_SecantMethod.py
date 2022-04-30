@@ -9,7 +9,7 @@ def SecantMethod(func, a, b, mxi, tol):
         return f
 
     #Rules of Applying
-    m = a - ( f(a) / ((f(a)-f(b))/(a-b)) )
+    m = a - (f(a) * ( (a-b) / (f(a)-f(b)) ))
 
     iters = 0
     max_iters = mxi
@@ -24,7 +24,7 @@ def SecantMethod(func, a, b, mxi, tol):
         print()
         
         #Finding the m, the point in the x-axis which the secant line touches
-        m = a - ( f(a) / ((f(a)-f(b))/(a-b)) )
+        m = a - (f(a) * ( (a-b) / (f(a)-f(b)) ))
 
         #Advancing to next iteration
         a, b = b, m

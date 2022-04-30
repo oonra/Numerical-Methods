@@ -18,7 +18,7 @@ def SecantMethod(func, a, b, mxi, tol):
     #Applying the method:
     while (abs(f(m)) > tolerance and iters < max_iters and (a != b)):
         #Printing the table in each iteration:
-        table= [["-   a   -", "-  f(a)  -", "-   b   -", "-  f(b)  -", "  ", "-   m   -", "-  f(m)  -"], 
+        table= [["-   a   -", "-  f(a)  -", "-   b   -", "-  f(b)  -", " ", "-   m   -", "-  f(m)  -"], 
                 [round(a,4), round(f(a),4), round(b,4), round(f(b),4), " ", round(m,4), round(f(m),4)]]
         print(tabulate(table, tablefmt="grid"))
         print()
@@ -31,7 +31,7 @@ def SecantMethod(func, a, b, mxi, tol):
         iters += 1
     
     #Final table at the end of the method
-    table= [["-   a   -", "-  f(a)  -", "-   b   -", "-  f(b)  -", "  ", "-   m   -", "-  f(m)  -"], 
+    table= [["-   a   -", "-  f(a)  -", "-   b   -", "-  f(b)  -", " ", "-   m   -", "-  f(m)  -"], 
             [round(a,4), round(f(a),4), round(b,4), round(f(b),4), " ", round(m,4), round(f(m),4)]]
     print(tabulate(table, tablefmt="grid"))
     print()
